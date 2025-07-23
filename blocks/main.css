@@ -1,0 +1,78 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: relative;
+  max-width: 65%;
+  margin-left: 11%;
+  margin-top: 7.5%;
+}
+.main__title {
+  font-family: "Inter-black", Arial, sans-serif;
+  font-size: 54px;
+  line-height: 1.1;
+  margin: 0;
+}
+.main__quote {
+  font-size: 24px;
+  line-height: 1.4;
+  margin-top: 4%;
+  margin-bottom: 0;
+}
+.main__quote-author {
+  font-size: 24px;
+  line-height: 1.4;
+  margin-top: 1.5%;
+  margin-bottom: 0;
+  text-align: right;
+  width: 88%;
+}
+.main__text {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-top: 4%;
+  margin-bottom: 0;
+  width: 88%;
+}
+@media screen and (max-width: 1024px) {
+  .main {
+    max-width: 95.5%;
+    margin: auto;
+    margin-top: 7.5%;
+  }
+  .main__title {
+    font-size: 45px;
+  }
+
+  .main__quote-author {
+    width: 100%;
+  }
+  .main__text {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 544px) {
+  .main {
+    margin-top: 20%;
+  }
+  .main__title {
+    font-size: 32px;
+  }
+
+  .main__quote {
+    margin-top: 14%;
+  }
+  .main__quote_br {
+    display: none;
+  }
+  .main__quote-author {
+    margin-top: 4%;
+  }
+
+  .main__text {
+    margin-top: 11%;
+    margin-bottom: 10%;
+  }
+}
